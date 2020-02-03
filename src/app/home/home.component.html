@@ -1,0 +1,16 @@
+<h1>Random Recipe</h1>
+<p>Refresh this page for a random coffee recipe</p>
+<div *ngIf="random">
+  <div *ngFor="let recipe of random; let i = index">
+    <h2 class="name">
+      {{ recipe.results[i].title }}
+    </h2>
+    <img class="recipe-picture" src="{{ recipe.results[i].image }}" />
+
+    <p>
+      <a class="button" href="{{ recipe.results[i].spoonacularSourceUrl }}"
+        >Read Full Recipe</a
+      >
+    </p>
+  </div>
+</div>

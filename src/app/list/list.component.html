@@ -1,0 +1,37 @@
+<h1>Coffee Drinks Recipes</h1>
+
+<ul *ngIf="recipes">
+  <li *ngFor="let recipe of recipes">
+    <h2 class="name">{{ recipe.title }}</h2>
+    <img class="recipe-picture" src="{{ recipe.image }}" />
+    <p
+      class="usedingr"
+      *ngFor="
+        let amount of recipe.usedIngredients;
+        let unitLong;
+        of: recipe.usedIngredients;
+        let name;
+        of: recipe.usedIngredients;
+        let i = index
+      "
+    >
+      {{ recipe.usedIngredients[i].amount }}
+      {{ recipe.usedIngredients[i].unitLong }}
+      {{ recipe.usedIngredients[i].name }}
+    </p>
+    <p
+      *ngFor="
+        let amount of recipe.missedIngredients;
+        let unitLong;
+        of: recipe.missedIngredients;
+        let name;
+        of: recipe.missedIngredients;
+        let i = index
+      "
+    >
+      {{ recipe.missedIngredients[i].amount }}
+      {{ recipe.missedIngredients[i].unitLong }}
+      {{ recipe.missedIngredients[i].name }}
+    </p>
+  </li>
+</ul>
