@@ -9,7 +9,7 @@ export class HttpService {
 
   getRecipes() {
     return this.http.get(
-      "https://api.spoonacular.com/recipes/findByIngredients?apiKey=fc5c0e70690646989f88dc470d314cc2&ingredients=coffee&type=drink&forceExtraction=true"
+      "https://api.spoonacular.com/recipes/findByIngredients?apiKey=fc5c0e70690646989f88dc470d314cc2&ingredients=coffee&type=drink"
     );
   }
   getRandom() {
