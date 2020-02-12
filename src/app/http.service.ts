@@ -9,12 +9,12 @@ export class HttpService {
 
   getRecipes() {
     return this.http.get(
-      "https://api.spoonacular.com/recipes/findByIngredients?apiKey=fc5c0e70690646989f88dc470d314cc2&ingredients=coffee&type=drink"
+      "https://api.spoonacular.com/recipes/findByIngredients?apiKey=d416a15e9af1466491905f0dad4d4f30&ingredients=coffee&type=drink"
     );
   }
   getRandom() {
     return this.http.get(
-      "https://api.spoonacular.com/recipes/complexSearch?apiKey=fc5c0e70690646989f88dc470d314cc2&number=1&query=coffee&sort=random&addRecipeInformation=true&fillIngredients=true"
+      "https://api.spoonacular.com/recipes/complexSearch?apiKey=d416a15e9af1466491905f0dad4d4f30&number=1&query=coffee&sort=random&addRecipeInformation=true&fillIngredients=true"
     );
   }
 }
