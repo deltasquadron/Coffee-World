@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
     "@netlify-builder/deploy": "^2.0.3",
+    "netlify": "^8.0.4",
+    "netlify-cli": "^6.14.21",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
